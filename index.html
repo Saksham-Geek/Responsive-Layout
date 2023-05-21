@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      module.exports = {
+        theme: {
+          screens: {
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- <h1 class="text-6xl font-bold">Hello world!</h1> -->
+    <main class="m-4 text-center">
+      <header>
+        <nav class="flex gap-4 mt-4">
+          <div class="logo bg-[#63a0c6] w-2/12 lg:w-2/12 h-16">Logo</div>
+          <div class="menu bg-[#ababa9] w-10/12 lg:w-10/12">Menu</div>
+        </nav>
+      </header>
+
+      <section
+        class="mx-auto hero-section bg-[#797977] h-64 md:h-80 mt-4 w-full">
+        Hero Section
+      </section>
+
+      <section
+        class="cards mt-4 grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div class="card w-full h-24 md:h-48 lg:h-64 bg-[#b4d5e4]">Card 1</div>
+        <div class="card w-full h-24 md:h-48 lg:h-64 bg-[#b4d5e4]">Card 2</div>
+        <div class="card w-full h-24 md:h-48 lg:h-64 bg-[#b4d5e4]">Card 3</div>
+      </section>
+
+      <footer
+        class="mx-auto hero-section bg-[#c5c6c0] h-24 md:h-48 mt-4 w-full">
+        Footer
+      </footer>
+    </main>
+  </body>
+</html>
